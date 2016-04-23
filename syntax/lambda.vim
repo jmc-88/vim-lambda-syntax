@@ -58,13 +58,16 @@ hi def link lambdaType            Type
 
 " {{{ Language keywords and statements
 
-syn keyword lambdaStatement       let in fix
+syn keyword lambdaFunction        fn
+hi def link lambdaFunction        Function
+
+syn keyword lambdaStatement       let in fix seq
 hi def link lambdaStatement       Statement
 
 syn keyword lambdaConditional     if then else
 hi def link lambdaConditional     Conditional
 
-syn keyword lambdaKeyword         not and or xor
+syn keyword lambdaKeyword         new not and or xor
 hi def link lambdaKeyword         Keyword
 
 syn keyword lambdaException       try catch finally throw error throws
