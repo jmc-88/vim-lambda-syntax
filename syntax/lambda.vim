@@ -38,6 +38,9 @@ hi def link lambdaBoolean         Boolean
 syn region lambdaString           start='"' skip='\\"' end='"' display
 hi def link lambdaString          String
 
+syn keyword lambdaIdentifier      this
+hi def link lambdaIdentifier      Identifier
+
 " }}} Value syntax
 
 " {{{ Type syntax
@@ -46,6 +49,8 @@ syn keyword lambdaType            undefined
 syn keyword lambdaType            complex float integer
 syn keyword lambdaType            null
 syn keyword lambdaType            bool
+syn keyword lambdaType            string
+syn keyword lambdaType            regex
 syn keyword lambdaType            unknown
 hi def link lambdaType            Type
 
@@ -59,7 +64,10 @@ hi def link lambdaStatement       Statement
 syn keyword lambdaConditional     if then else
 hi def link lambdaConditional     Conditional
 
-syn keyword lambdaException       try catch finally throw
+syn keyword lambdaKeyword         not and or xor
+hi def link lambdaKeyword         Keyword
+
+syn keyword lambdaException       try catch finally throw error throws
 hi def link lambdaException       Exception
 
 " }}} Language keywords and statements
