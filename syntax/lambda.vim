@@ -46,7 +46,7 @@ hi def link lambdaIdentifier      Identifier
 " {{{ Type syntax
 
 syn keyword lambdaType            undefined
-syn keyword lambdaType            complex float int
+syn keyword lambdaType            complex float int uint
 syn keyword lambdaType            null
 syn keyword lambdaType            bool
 syn keyword lambdaType            string
