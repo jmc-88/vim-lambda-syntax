@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language: Lambda
-" Maintainer: Daniele Cocca
+" Maintainers: Daniele Cocca, Alberto La Rocca
 " Latest Revision: 13 July 2015
 "
 " Based on:
@@ -30,7 +30,7 @@ hi def link lambdaComment         Comment
 
 " {{{ Value syntax
 
-" TODO: add highlighting rules for integer, floating point, complex numbers.
+" TODO: add highlighting rules for integer, real, and complex numbers.
 
 syn match lambdaBoolean           "\<true\|false\>" display
 hi def link lambdaBoolean         Boolean
@@ -46,7 +46,7 @@ hi def link lambdaIdentifier      Identifier
 " {{{ Type syntax
 
 syn keyword lambdaType            undefined
-syn keyword lambdaType            complex float int uint
+syn keyword lambdaType            complex real integer natural
 syn keyword lambdaType            null
 syn keyword lambdaType            bool
 syn keyword lambdaType            string
