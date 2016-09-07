@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: Lambda
 " Maintainers: Daniele Cocca, Alberto La Rocca
-" Latest Revision: 13 July 2015
+" Latest Revision: September 7th, 2016
 "
 " Based on:
 "   https://github.com/71104/lambda/wiki/Learn-Lambda
@@ -36,6 +36,7 @@ syn match lambdaBoolean           "\<true\|false\>" display
 hi def link lambdaBoolean         Boolean
 
 syn region lambdaString           start='"' skip='\\"' end='"' display
+syn region lambdaString           start='\'' skip='\\"' end='\'' display
 hi def link lambdaString          String
 
 syn keyword lambdaIdentifier      this
@@ -47,8 +48,7 @@ hi def link lambdaIdentifier      Identifier
 
 syn keyword lambdaType            undefined
 syn keyword lambdaType            complex real integer natural
-syn keyword lambdaType            null
-syn keyword lambdaType            bool
+syn keyword lambdaType            boolean
 syn keyword lambdaType            string
 syn keyword lambdaType            regex
 syn keyword lambdaType            unknown
