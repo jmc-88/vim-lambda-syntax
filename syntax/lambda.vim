@@ -67,7 +67,7 @@ hi def link lambdaStatement       Statement
 syn keyword lambdaConditional     if then else
 hi def link lambdaConditional     Conditional
 
-syn keyword lambdaKeyword         new not and or xor
+syn keyword lambdaKeyword         new not and or xor typeof
 hi def link lambdaKeyword         Keyword
 
 syn keyword lambdaException       try catch finally throw error throws
